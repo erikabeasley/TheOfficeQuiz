@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Office Quiz</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header class="header" style="background-color: whitesmoke;">
+        <a href="highscores.html">View Highscores</a>
+        <!-- <a onclick="getScore()" href="#">View Highscores</a> -->
+        <span id="timeLeft" class="float-right">Time: 0</span>
+    </header>
+
+    <!--main body of quiz-->
+    <div id="quiz">
+        <div id="quizBody">
+            <div class="container" id="start">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 text-center">
+                        <h1>The Office Quiz</h1> <br>
+                        <h2>Answer the following questions as quickly as you can!</h2> <br>
+                        <p><strong>Note: </strong>(Each incorrect answer will deduct 10 seconds from the timer!)</p>
+                        <button onclick="start()">Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+header {
+    padding: 14px;
+}
+
+/* main section */
+
+body {
+    background: url(https://cellularnews.com/wp-content/uploads/2020/03/peach-watercolor-325x485.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+#quizBody {
+    text-align: center;
+    padding: 12vh;
+}
+
+h4 {
+    padding: 10px 8px 10px 8px;
+}
+h1{
+    color: tomato;
+}
+h2 {
+    text-align: center;
+    /* color: whitesmoke; */
+    color: rgb(156, 156, 156);
+    font-size: 24px;
+}
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    /* background-color: rgb(255, 186, 181); */
+    background-color: whitesmoke;
+    border: 2px solid;
+    border-color: #d4d4d4
+}
+
+span {
+    font-size: 24px;
+    color: rgb(94, 94, 94);
+}
+a {
+    color: tomato;
+    font-size: 24px;
+}
+p {
+    color: rgb(182, 181, 181)
+}
+
+button {
+    padding: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 24px;
+    cursor: pointer;
+    font-size: 24px;
+    border-color: tomato;
+    background-color: tomato;
+    color: white;
+    /* font-size: 30px; */
+}
+
+button:hover {
+    transition-duration: 0.4s;
+    background-color: #ff80a4;
+}
+
+#quiz {
+    text-align: center;
+}
+
+.li {
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+    font-weight: bolder;
+}
+
+
+
