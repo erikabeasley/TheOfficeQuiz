@@ -89,7 +89,7 @@ function endGame() {
                 <h3>You got a ` + score + ` /100!</h3>
                 <h3>That means you got ` + score / 10 + ` questions correct!</h3>
                 <input type="text" id="name" placeholder="Initials"> 
-                <button onclick="storeHighscores()">Set score!</button>
+                <button onclick="getScore()">Set score!</button>
             </div>
         </div>
     </div>  
@@ -109,13 +109,13 @@ function renderLastScore() {
 }
 function storeHighscores() {
     // Stringify and set "highscores" key in localStorage to higscores array
-    var highscores = JSON.parse(localStorage.getItem("highscores"));
+    var highscores = JSON.parse(localStorage.getItem("highscore"));
     /// add the next high score
     if (!highscores) {
         highscores = [];
     }
     highscores.push({ initials: document.getElementById("name").value, score: score })
-    localStorage.setItem("highscores", JSON.stringify(highscores));
+    localStorage.setItem("highscore", JSON.stringify(highscores));
 }
 
 
@@ -125,8 +125,8 @@ function getScore() {
     <div class="container" id="start">
         <div class="row justify-content-center">
             <div class="col-10 col-lg-8 text-center">
-                <h2>` + localStorage.getItem("highscoreName") + ` Highscore:</h2>
-                <h1>` + localStorage.getItem("highscore") + `</h1><br>
+                <h2> Highscore:</h2>
+                <h1> Initials: ` + document.getElementById("name").value + `   Score: ` + score + `</h1><br>
                 <ul id="highscoresList"></ul>
 
                 <button onclick="clearScore()">Clear score!</button><button onclick="resetGame()">Play Again!</button>
@@ -134,17 +134,14 @@ function getScore() {
         </div>
     </div>  
 `;
-
+    storeHighscores();
     document.getElementById("quizBody").innerHTML = quizContent;
 }
 
 //Clears the scores and Initials in the local storage if the user selects 'clear score'
 function clearScore() {
     localStorage.clear();
-    localStorage.removeItem("highscore");
-    localStorage.removeItem("highscoreName");
 
-    // resetGame();
 }
 
 //Reset game function 
