@@ -1,3 +1,4 @@
+## The Office Quiz
 In this assignment I have built a timed quiz with multiple-choice questions. It includes two javascript files, two html files, a ccs style file, and this ReadMe.
 
 The script.js file includes an array of all the office questions and answer choices given to the user. The array includes the correct answer as well. I have a start function that defines the time left on the timer, and includes the timer function that counts down from 75. When the timer hits 0 seconds, the game ends by the endGame function. The endGame function clears the timer, stores the Highscores, and displays the score to the user. It has an input included to where the user inputs initials.
