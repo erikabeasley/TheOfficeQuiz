@@ -12,3 +12,9 @@ The next function loops through the array of questions to display to the user an
 In the highscores javascript file, the renderHighscores function allows each newscore to be added and stored to local storage so when the user clicks "view highscores" the user is displayed with a list of highscores. The View Highscores page is a link to the highscores html page.
 
 I used css to style.
+
+# Deployed Application
+
+https://erikabeasley.github.io/TheOfficeQuiz/
+
+![The Office Quiz](ImageDemo.PNG)
